@@ -1,2 +1,56 @@
+# Phulbaria Upazila Service Platform — independent, non-official prototype.
+# This environment is NOT a public service and must never be indexed or cached
+# by search engines or archive services. Remove this file only when a reviewed,
+# authorized production deployment replaces the prototype.
+
 User-agent: *
-Disallow:
+Disallow: /
+
+# Explicitly block the major crawlers, including those that ignore "User-agent: *".
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: DuckDuckBot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Applebot
+Disallow: /
+
+# AI/LLM crawlers that may retain or republish prototype content.
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+# Internet Archive / Wayback Machine.
+User-agent: ia_archiver
+Disallow: /
+
+# Note: robots.txt is advisory only. Every page also sends an X-Robots-Tag
+# HTTP header and a <meta name="robots"> tag, which are enforced by clients
+# that honor them.
